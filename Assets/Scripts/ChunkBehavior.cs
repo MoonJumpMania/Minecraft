@@ -49,7 +49,7 @@ public class ChunkBehavior : MonoBehaviour
             var j = 0;
             foreach (var currentTriangle in CubeData.Triangles[i])
             {
-                _vertices.Add(CubeData.Vertices[currentTriangle]);
+                _vertices.Add(CubeData.Vertices[currentTriangle] + pos);
                 _triangles.Add(currentVertex++);
                 _uvs.Add(CubeData.CubeUV[j++]);
             }
